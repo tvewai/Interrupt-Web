@@ -1,5 +1,19 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## On Changed Branch and commit
+this branch not pull on remote/main 
+
+just only singleBranch 
+```git command
+git switch study
+git git push
+
+do not fetch and pull main branch
+
+```
+
+
+
 ## Getting Started
 
 First, run the development server:
