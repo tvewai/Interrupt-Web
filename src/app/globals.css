@@ -1,46 +1,65 @@
 .gnb {
-    width: 100%;
-    height: 15vh;
-    float: left;
-    display: flex;
-    border: solid black;
+  width: 100%;
+  height: 15vh;
+  float: left;
+  display: flex;
+  border: solid black;
 }
 .gnb .logo {
-    width: 20vw;
-    border : solid red;
-    font-size: 50px;
-    display: flex;
-    text-align: center;
-    align-items: center;
+  width: 20vw;
+  border: solid red;
+  font-size: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 .gnb .menu {
-    width: 60vw;
-    border : solid red;
-    display: flex;
-    align-items: center;
+  width: 60vw;
+  border: solid red;
+  display: flex;
+  align-items: center;
 }
 .gnb .sign {
-    width: 20vw;
-    border : solid red;
-    display: flex;
-    align-items: center;
+  width: 20vw;
+  border: solid red;
+  display: flex;
+  align-items: center;
 }
 .web {
-    width: 100%;
-    height: 80vh; 
-    border: solid black;
+  width: 100%;
+  height: 80vh;
+  border: solid black;
 }
 .footer {
-    width: 100%;
-    height: 15vh;
-    border: solid black;
+  width: 100%;
+  height: 15vh;
+  border: solid black;
 }
 .simple-search {
-    display: flex;
-    height: 30vh;
-    border: solid red;
+  display: flex;
+  height: 30vh;
+  border: solid red;
+  justify-content: center;
 }
 .thumbnail {
-    height: 30vh;
-    border: solid red;
+  height: 30vh;
+  border: solid red;
+}
+
+.simple-search-area {
+  padding: 32px;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-right: 32px;
+  padding-left: 32px;
+  text-align: center;
+  width: 80%;
+  border: solid rebeccapurple;
+}
+.simple-search-row {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-template-columns: 50% 50%;
+  width: 100%;
 }
