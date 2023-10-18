@@ -29,7 +29,7 @@ export default function SimpleSearch() {
           이력서 간단 조회
           <div className="simple-search-row">
             <FilteToggleBox title={"직군"} optionBoxList={responseList} />
-            <FilteToggleBox title={"직종"} />
+            <FilteToggleBox title={"직종"} optionBoxList={responseList} />
           </div>
           <div className="simple-search-row">
             <FilteToggleBox />

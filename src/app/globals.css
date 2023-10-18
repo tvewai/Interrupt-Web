@@ -63,24 +63,32 @@
   grid-template-columns: 50% 50%;
   width: 100%;
 }
-.filter-option {
-  position: relative;
-}
+
 .filter-modal {
   display: block;
   position: absolute;
   top: 100%;
   left: 0;
   background: white;
+  width: 100%;
   border: 1px solid #ccc;
   z-index: 1; /* Adjust the z-index value as needed */
+}
+
+.filter-modal div {
+  padding: 5px;
+  text-align: left;
+}
+
+.filter-modal div:hover {
+  background: #919191;
 }
 .filter-option.open .filter-modal {
   display: block;
 }
 .filter-option {
   position: relative;
-  width: 200px;
+  width: 100%;
   margin: 10px;
 }
 
@@ -96,7 +104,7 @@
   font-weight: bold;
 }
 
-.filter-select button {
+.filter-select .toggleButton {
   display: block;
   margin-top: 10px;
   cursor: pointer;
@@ -106,18 +114,6 @@
   padding: 5px 10px;
 }
 
-.filter-select button:hover {
+.filter-select .toggleButton:hover {
   background: #005380;
-}
-
-.filter-option.open .filter-modal {
-  display: block;
-}
-
-.filter-modal div {
-  padding: 5px;
-}
-
-.filter-modal div:hover {
-  background: #f2f2f2;
 }
