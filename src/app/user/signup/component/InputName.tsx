@@ -1,18 +1,19 @@
 "use client";
 import { SignUpRequestState } from "@/app/recoil/user";
 import { SignUpRequestType } from "@/app/types/user";
-import { useRef } from "react";
+import { ChangeEvent, useRef } from "react";
 import { useRecoilState } from "recoil";
+import Input from "../components/common/Input";
 
 export default function InputName() {
-  const inputNameValue = useRef<string>("");
-
   const [signUpRequest, setSignUpRequest] =
     useRecoilState<SignUpRequestType>(SignUpRequestState);
 
-  const onNameBlur = () => {
+  const { name } = signUpRequest;
+
+  const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
     const tempSignUpRequest = { ...signUpRequest };
-    tempSignUpRequest.name = inputNameValue.current.value;
+    tempSignUpRequest.name = e.target.value;
     setSignUpRequest(tempSignUpRequest);
   };
 
@@ -20,10 +21,15 @@ export default function InputName() {
     <>
       <tr>
         <td>
-          <label htmlFor="">이름</label>
+          <label htmlFor="name">이름</label>
         </td>
         <td>
-          <input type="text" ref={inputNameValue} onBlur={onNameBlur} />
+          <Input
+            type="text"
+            id="name"
+            value={name}
+            onChange={handleNameChange}
+          />
         </td>
       </tr>
     </>

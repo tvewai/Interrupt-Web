@@ -2,6 +2,7 @@ import { SignUpRequestState } from "@/app/recoil/user";
 import { SignUpRequestType } from "@/app/types/user";
 import { useRecoilState } from "recoil";
 import { useRouter } from 'next/navigation';
+import Button from "../components/common/Button";
 
 export default function SignUpButton() {
   const [signUpRequest, setSignUpRequest] =
@@ -39,7 +40,7 @@ export default function SignUpButton() {
     <>
       <tr>
         <td>
-          <button onClick={onSignUp}>회원가입</button>
+          <Button label="회원가입" onClick={onSignUp} />
         </td>
       </tr>
     </>
