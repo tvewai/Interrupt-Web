@@ -1,7 +1,7 @@
 "use client";
 import { error } from "console";
 import React, { useState, useRef, useEffect } from "react";
-import * as testApi from "../api/testApi";
+
 interface FilteToggleBoxProps {
   title?: string;
   optionBoxList?: any[]; // 옵션 리스트의 타입을 지정합니다.

@@ -1,8 +1,8 @@
 "use client";
 
-import FilteToggleBox from "@/app/(main)/atoms/FilteToggleBox";
-import FilterRange from "@/app/(main)/atoms/FilterRange";
 import { useState, useEffect } from "react";
+import FilteToggleBox from "./SimpleSearch/FilteToggleBox";
+import FilterRange from "./SimpleSearch/FilterRange";
 interface filterItem {
   id: number;
   value: string;

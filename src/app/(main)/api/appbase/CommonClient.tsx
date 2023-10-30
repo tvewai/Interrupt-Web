@@ -1,7 +1,7 @@
 import { CommonRequestData, CommonResponseData, HttpMethods } from "./types";
 
 class CommonClient {
-  send<T>(method: HttpMethods, option?: CommonRequestData): Promise<T> {
+  private send<T>(method: HttpMethods, option?: CommonRequestData): Promise<T> {
     const { url, data, params, headers } = option || {};
 
     const opt: RequestInit = {
@@ -12,7 +12,7 @@ class CommonClient {
       },
       body: data ? JSON.stringify(data) : undefined,
     };
-
+    // http 유효성검사 추가 
     return fetch(url ? url : "", opt)
       .then(async (res) => {
         if (res.status === 200) {
