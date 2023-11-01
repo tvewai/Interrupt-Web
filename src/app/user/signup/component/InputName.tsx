@@ -3,7 +3,7 @@ import { SignUpRequestState } from "@/app/recoil/user";
 import { SignUpRequestType } from "@/app/types/user";
 import { ChangeEvent, useRef } from "react";
 import { useRecoilState } from "recoil";
-import Input from "../components/common/Input";
+import Input from "../../../component/common/Input";
 
 export default function InputName() {
   const [signUpRequest, setSignUpRequest] =

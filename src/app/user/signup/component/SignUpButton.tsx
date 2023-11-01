@@ -2,7 +2,7 @@ import { SignUpRequestState } from "@/app/recoil/user";
 import { SignUpRequestType } from "@/app/types/user";
 import { useRecoilState } from "recoil";
 import { useRouter } from 'next/navigation';
-import Button from "../components/common/Button";
+import Button from "../../../component/common/Button";
 
 export default function SignUpButton() {
   const [signUpRequest, setSignUpRequest] =
