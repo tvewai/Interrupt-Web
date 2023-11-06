@@ -1,5 +1,5 @@
 import React from "react";
-import interruptClient from "@/app/(main)/api";
+import * as api from "@api";
 
 interface FilterRangeProps {
   step?: number; // step 프로퍼티를 옵셔널로 만듭니다.
