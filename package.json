@@ -11,7 +11,11 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
+<<<<<<< HEAD
     "next": "13.5.4"
+=======
+    "recoil": "^0.7.7"
+>>>>>>> c3197982c3dccc027fc4a1d681c156bf7a62dbc9
   },
   "devDependencies": {
     "typescript": "^5",
